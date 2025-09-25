@@ -1,0 +1,44 @@
+{
+    "tilesets" : [
+        {
+            "path" :  "./tiled_project/pokemon_crystal_tileset.png",
+            "tileHeight" : 16,
+            "tileWidth" : 16
+        },
+        {
+            "path" :  "./tiled_project/pokemon_crystal_character_tileset.png",
+            "tileHeight" : 16,
+            "tileWidth" : 16
+        },
+        {
+            "path" :   "./tiled_project/pokemon_crystal_text_tileset.png",
+            "tileHeight" : 8,
+            "tileWidth" : 8
+        },
+        {
+            "path" :  "./tiled_project/pokemon_crystal_dialogue_box.png",
+            "tileHeight" : 48,
+            "tileWidth" : 176
+        },
+        {
+            "path" : "./tiled_project/menu.png",
+            "tileHeight" : 128,
+            "tileWidth" : 80
+        },
+        {
+            "path" : "./tiled_project/bag_template.png",
+            "tileHeight" : 144,
+            "tileWidth" : 176
+        },
+        {
+            "path" : "./tiled_project/pack_compartments_tileset.png",
+            "tileHeight" : 24,
+            "tileWidth" : 40
+        }, 
+        {
+            "path" : "./tiled_project/bag_comparments_text_tileset.png",
+            "tileHeight" : 24,
+            "tileWidth" : 40
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "player" : {
+        "name" : "Player",
+        "startPokemonIdx" : 0,
+        "pokemon" : [
+            {
+                "name" : "Bulbasaur",
+                "nickname" : "",
+                "level" : 20
+            },
+            {
+                "name" : "Pidgey",
+                "nickname" : "",
+                "level" : 15
+            },
+            {
+                "name" : "Sentret",
+                "nickname" : "",
+                "level" : 33
+            }
+        ]
+    },
+    "trainer_1" : {
+        "name" : "Youngester Joey",
+        "startPokemonIdx" : 0,
+        "pokemon" : [
+            {
+                "name" : "Bulbasaur",
+                "nickname" : "",
+                "level" : 20
+            },
+            {
+                "name" : "Pidgey",
+                "nickname" : "",
+                "level" : 15
+            },
+            {
+                "name" : "Sentret",
+                "nickname" : "",
+                "level" : 33
+            }
+        ]
+    }
+}

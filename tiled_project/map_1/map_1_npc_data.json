@@ -1,0 +1,22 @@
+{
+    "npcs" : [
+        {
+            "id" : "npc_0",
+            "movements" : [],
+            "startX" : 32,
+            "startY" : 64,
+            "characterName" : "fatGuyRed",
+            "dialogue" : "yaya is crazy hoolagon",
+            "onInteractFuncName" : "npcDefault"
+        },
+        {
+            "id" : "npc_1",
+            "movements" : [0, 1, 2, 3],
+            "startX" : 128,
+            "startY" : 256,
+            "characterName" : "fatGuyRed",
+            "dialogue" : "cato is the best!!",
+            "onInteractFuncName" : "npcDefault"
+        }
+    ]
+}

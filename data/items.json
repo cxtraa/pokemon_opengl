@@ -1,0 +1,12 @@
+{  
+    "items" :[
+        {
+            "name" : "potion",
+            "description" : "This heals your pokemon" 
+        },
+        {
+            "name" : "antidote",
+            "description" : "This is used to catch Pokemon"
+        }
+    ]
+}

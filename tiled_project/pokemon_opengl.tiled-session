@@ -1,0 +1,130 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map_1.tmx",
+    "expandedProjectPaths": [
+        "map_1",
+        "map_2",
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 2.7385
+        },
+        "map_1.tmx": {
+            "expandedObjectLayers": [
+                15
+            ],
+            "scale": 1.8212,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 280.30968592137054,
+                "y": 156.21568196793322
+            }
+        },
+        "map_1.tmx#pokemon_crystal_tileset": {
+            "scaleInDock": 1
+        },
+        "map_1.tmx#tileset": {
+            "scaleInDock": 1.9611
+        },
+        "map_2.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 4.0979,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.91898289367725,
+                "y": 64.0572000292833
+            }
+        },
+        "map_2.tmx#pokemon_crystal_tileset": {
+            "scaleInDock": 1
+        },
+        "map_2.tmx#tileset": {
+            "dynamicWrapping": false,
+            "scaleInDock": 2.5972
+        },
+        "map_3.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 4.3069,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79.98792635073953,
+                "y": 63.967122524321454
+            }
+        },
+        "map_3.tmx#tileset": {
+            "scaleInDock": 2.7385
+        },
+        "pokemon_crystal_character_tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2.2358
+        },
+        "pokemon_crystal_text_tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 6.3569
+        },
+        "pokemon_crystal_tileset.tsx": {
+            "scaleInDock": 2.5437,
+            "scaleInEditor": 5.2552
+        },
+        "test_map.tmx": {
+            "expandedObjectLayers": [
+                7
+            ],
+            "scale": 8.3291,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 252.78841651558992,
+                "y": 1.0805489188507806
+            }
+        },
+        "test_map.tmx#pokemon_crystal_tileset": {
+            "scaleInDock": 3.1495,
+            "scaleInEditor": 8.8229
+        },
+        "test_map.tmx#tileset": {
+            "scaleInDock": 3.7577
+        }
+    },
+    "frame.defaultDuration": 500,
+    "last.exportedFilePath": "/Users/msaghir/Library/CloudStorage/OneDrive-RokuInc/Documents/pokemon_opengl/tiled_project/map_1",
+    "last.imagePath": "/Users/msaghir/Library/CloudStorage/OneDrive-RokuInc/Documents/pokemon_opengl/tiled_project",
+    "lastUsedTilesetExportFilter": "JSON tileset files (*.tsj *.json)",
+    "map.height": 8,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 10,
+    "openFiles": [
+        "map_1.tmx",
+        "map_2.tmx",
+        "map_3.tmx",
+        "pokemon_crystal_tileset.tsx"
+    ],
+    "project": "pokemon_opengl.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "pokemon_crystal_tileset.tsx",
+        "map_3.tmx",
+        "map_2.tmx",
+        "map_1.tmx",
+        "test_map.tmx",
+        "pokemon_crystal_text_tileset.tsx",
+        "pokemon_crystal_character_tileset.tsx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

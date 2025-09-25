@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="10" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="8">
+ <editorsettings>
+  <export target="map_2.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="pokemon_crystal_tileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" class="tileLayer" width="10" height="8">
+  <data encoding="csv">
+417,421,417,417,417,417,417,417,417,432,
+425,429,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,433,434,425,425,425,425,
+425,425,425,425,441,442,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,431,431,425,425,425,425,425,425,
+7,7,0,0,7,7,7,7,7,7
+</data>
+ </layer>
+ <objectgroup id="2" name="Object Layer 1" class="warpPoints">
+  <object id="1" name="warpPoint_1_1" type="warp" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="mapToWarpTo" value="map_1"/>
+    <property name="targetDir" type="int" value="2"/>
+    <property name="targetX" type="int" value="224"/>
+    <property name="targetY" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="3" name="startPoint" type="start" x="32" y="48" width="16" height="16"/>
+  <object id="5" name="warpPoint_2_1" type="warp" x="144" y="0" width="16" height="16">
+   <properties>
+    <property name="mapToWarpTo" value="map_3"/>
+    <property name="targetDir" type="int" value="2"/>
+    <property name="targetX" type="int" value="144"/>
+    <property name="targetY" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="6" name="warpPoint_1_2" type="warp" x="48" y="112" width="16" height="16">
+   <properties>
+    <property name="mapToWarpTo" value="map_1"/>
+    <property name="targetDir" type="int" value="2"/>
+    <property name="targetX" type="int" value="240"/>
+    <property name="targetY" type="int" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

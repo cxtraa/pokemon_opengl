@@ -1,0 +1,1870 @@
+{
+  "razor-wind": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "special",
+    "description": "Requires a turn to charge before attacking."
+  },
+  "cut": {
+    "type": "normal",
+    "power": 50,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "vine-whip": {
+    "type": "grass",
+    "power": 45,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "headbutt": {
+    "type": "normal",
+    "power": 70,
+    "move_type": "physical",
+    "description": "Has a 30% chance to make the target flinch.",
+    "effects" : [
+      {
+        "name" : "flinch",
+        "probability" : 0.3,
+        "self" : false
+      }
+    ]
+  },
+  "tackle": {
+    "type": "normal",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "growl": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Attack by one stage.",
+    "effects" : [
+        {
+          "name" : "stat-change",
+          "stat" : "attack",
+          "change" : -1,
+          "self" : false
+        }
+    ]
+  },
+  "leech-seed": {
+    "type": "grass",
+    "power": null,
+    "move_type": "status",
+    "description": "Seeds the target, stealing HP from it every turn.",
+    "effects": [
+      {
+        "name": "leech-seed",
+        "self": false
+      }
+    ]
+  },
+  "growth": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Attack and Special Attack by one stage.",
+    "effects" : [
+        {
+          "name" : "stat-change",
+          "stat" : "attack",
+          "change" : 1,
+          "self" : true
+        },
+        {
+          "name" : "stat-change",
+          "stat" : "special-attack",
+          "change" : 1,
+          "self" : true
+        }
+      ]
+  },
+  "razor-leaf": {
+    "type": "grass",
+    "power": 55,
+    "move_type": "physical",
+    "description": "Has an increased chance for a critical hit."
+  },
+  "solar-beam": {
+    "type": "grass",
+    "power": 120,
+    "move_type": "special",
+    "description": "Requires a turn to charge before attacking.",
+    "effects" : [
+      {
+        "name" : "delay-attack"
+      }
+    ]
+  },
+  "poison-powder": {
+    "type": "poison",
+    "power": null,
+    "move_type": "status",
+    "description": "Poisons the target.",
+    "effects" : [
+      {
+        "name" : "poison",
+        "self" : false
+      }
+    ]
+  },
+  "sleep-powder": {
+    "type": "grass",
+    "power": null,
+    "move_type": "status",
+    "description": "Puts the target to sleep.",
+    "effects" : [
+      {
+        "name" : "sleep",
+        "self" : false
+      }
+    ]
+  },
+  "petal-dance": {
+    "type": "grass",
+    "power": 120,
+    "move_type": "special",
+    "description": "Hits every turn for 2-3 turns, then confuses the user."
+  },
+  "toxic": {
+    "type": "poison",
+    "power": null,
+    "move_type": "status",
+    "description": "Badly poisons the target, inflicting more damage every turn.",
+    "effects" : [
+      {
+        "name" : "poison",
+        "self" : false
+      }
+    ]
+  },
+  "double-team": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s evasion by one stage.",
+    "effects" : [
+      {
+        "name" : "stat-change",
+        "stat" : "evasion",
+        "change" : 1,
+        "self" : true
+      }
+    ]
+  },
+  "defense-curl": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises user\u2019s Defense by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": 1,
+        "self": true
+      }
+    ]
+  },
+  "light-screen": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Reduces damage from special attacks by 50% for five turns.",
+    "effects" : [
+      {
+        "name" : "light-screen",
+        "self" : true
+      }
+    ]
+  },
+  "skull-bash": {
+    "type": "normal",
+    "power": 130,
+    "move_type": "physical",
+    "description": "Raises the user\u2019s Defense by one stage.  User charges for one turn before attacking."
+  },
+  "flash": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s accuracy by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "accuracy",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "rest": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "User sleeps for two turns, completely healing itself.",
+    "effects" : [
+      {
+      "name" : "rest",
+      "self" : true
+      }
+    ]
+  },
+  "snore": {
+    "type": "normal",
+    "power": 50,
+    "move_type": "special",
+    "description": "Has a 30% chance to make the target flinch.  Only works if the user is sleeping."
+  },
+  "curse": {
+    "type": "ghost",
+    "power": null,
+    "move_type": "status",
+    "description": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense.",
+    "effects" : [
+      {
+      "name" : "curse",
+      "self" : true
+      }
+    ]
+  },
+  "protect": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Prevents any moves from hitting the user this turn."
+  },
+  "mud-slap": {
+    "type": "ground",
+    "power": 20,
+    "move_type": "special",
+    "description": "Has a 100% chance to lower the target\u2019s accuracy by one stage."
+  },
+  "giga-drain": {
+    "type": "grass",
+    "power": 75,
+    "move_type": "special",
+    "description": "Drains half the damage inflicted to heal the user."
+  },
+  "endure": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Prevents the user\u2019s HP from lowering below 1 this turn."
+  },
+  "swagger": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the target\u2019s Attack by two stages and confuses the target.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "attack",
+        "change": 2,
+        "self": false
+      },
+      {
+        "name": "confusion",
+        "self": false
+      }
+    ]
+  },
+  "fury-cutter": {
+    "type": "bug",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
+  },
+  "attract": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user.",
+    "effects": [
+      {
+        "name": "infatuation",
+        "self": false
+      }
+    ]
+  },
+  "sleep-talk": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Randomly uses one of the user\u2019s other three moves.  Only works if the user is sleeping."
+  },
+  "return": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Power increases with happiness, up to a maximum of 102."
+  },
+  "frustration": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Power increases as happiness decreases, up to a maximum of 102."
+  },
+  "safeguard": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Protects the user\u2019s field from major status ailments and confusion for five turns."
+  },
+  "sweet-scent": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s evasion by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "evasion",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "synthesis": {
+    "type": "grass",
+    "power": null,
+    "move_type": "status",
+    "description": "Heals the user by half its max HP.  Affected by weather."
+  },
+  "hidden-power": {
+    "type": "normal",
+    "power": 60,
+    "move_type": "special",
+    "description": "Power and type depend upon user\u2019s IVs.  Power can range from 30 to 70."
+  },
+  "sunny-day": {
+    "type": "fire",
+    "power": null,
+    "move_type": "status",
+    "description": "Changes the weather to sunny for five turns."
+  },
+  "roar": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Immediately ends wild battles.  Forces trainers to switch Pok\u00e9mon."
+  },
+  "hyper-beam": {
+    "type": "normal",
+    "power": 150,
+    "move_type": "special",
+    "description": "User foregoes its next turn to recharge."
+  },
+  "fire-punch": {
+    "type": "fire",
+    "power": 75,
+    "move_type": "physical",
+    "description": "Has a 10% chance to burn the target."
+  },
+  "scratch": {
+    "type": "normal",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "bite": {
+    "type": "dark",
+    "power": 60,
+    "move_type": "physical",
+    "description": "Has a 30% chance to make the target flinch."
+  },
+  "ember": {
+    "type": "fire",
+    "power": 40,
+    "move_type": "special",
+    "description": "Has a 10% chance to burn the target."
+  },
+  "flamethrower": {
+    "type": "fire",
+    "power": 90,
+    "move_type": "special",
+    "description": "Has a 10% chance to burn the target."
+  },
+  "strength": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "dragon-rage": {
+    "type": "dragon",
+    "power": null,
+    "move_type": "special",
+    "description": "Inflicts 40 points of damage."
+  },
+  "fire-spin": {
+    "type": "fire",
+    "power": 35,
+    "move_type": "special",
+    "description": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
+  },
+  "dig": {
+    "type": "ground",
+    "power": 80,
+    "move_type": "physical",
+    "description": "User digs underground, dodging all attacks, and hits next turn."
+  },
+  "rage": {
+    "type": "normal",
+    "power": 20,
+    "move_type": "physical",
+    "description": "If the user is hit after using this move, its Attack rises by one stage."
+  },
+  "smokescreen": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s accuracy by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "accuracy",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "fire-blast": {
+    "type": "fire",
+    "power": 110,
+    "move_type": "special",
+    "description": "Has a 10% chance to burn the target."
+  },
+  "swift": {
+    "type": "normal",
+    "power": 60,
+    "move_type": "special",
+    "description": "Never misses."
+  },
+  "rock-slide": {
+    "type": "rock",
+    "power": 75,
+    "move_type": "physical",
+    "description": "Has a 30% chance to make the target flinch."
+  },
+  "slash": {
+    "type": "normal",
+    "power": 70,
+    "move_type": "physical",
+    "description": "Has an increased chance for a critical hit."
+  },
+  "scary-face": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Speed by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "speed",
+        "change": -2,
+        "self": false
+      }
+    ]
+  },
+  "belly-drum": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "User pays half its max HP to max out its Attack.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "attack",
+        "change": 6,
+        "self": true
+      }
+    ]
+  },
+  "outrage": {
+    "type": "dragon",
+    "power": 120,
+    "move_type": "physical",
+    "description": "Hits every turn for 2-3 turns, then confuses the user."
+  },
+  "dynamic-punch": {
+    "type": "fighting",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Has a 100% chance to confuse the target."
+  },
+  "dragon-breath": {
+    "type": "dragon",
+    "power": 60,
+    "move_type": "special",
+    "description": "Has a 30% chance to paralyze the target."
+  },
+  "iron-tail": {
+    "type": "steel",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Has a 30% chance to lower the target\u2019s Defense by one stage."
+  },
+  "ancient-power": {
+    "type": "rock",
+    "power": 60,
+    "move_type": "special",
+    "description": "Has a 10% chance to raise all of the user\u2019s stats by one stage."
+  },
+  "rock-smash": {
+    "type": "fighting",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Has a 50% chance to lower the target\u2019s Defense by one stage."
+  },
+  "beat-up": {
+    "type": "dark",
+    "power": null,
+    "move_type": "physical",
+    "description": "Hits once for every conscious Pok\u00e9mon the trainer has."
+  },
+  "wing-attack": {
+    "type": "flying",
+    "power": 60,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "fly": {
+    "type": "flying",
+    "power": 90,
+    "move_type": "physical",
+    "description": "User flies high into the air, dodging all attacks, and hits next turn."
+  },
+  "earthquake": {
+    "type": "ground",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Inflicts regular damage and can hit Dig users."
+  },
+  "sandstorm": {
+    "type": "rock",
+    "power": null,
+    "move_type": "status",
+    "description": "Changes the weather to a sandstorm for five turns."
+  },
+  "steel-wing": {
+    "type": "steel",
+    "power": 70,
+    "move_type": "physical",
+    "description": "Has a 10% chance to raise the user\u2019s Defense by one stage."
+  },
+  "ice-punch": {
+    "type": "ice",
+    "power": 75,
+    "move_type": "physical",
+    "description": "Has a 10% chance to freeze the target."
+  },
+  "tail-whip": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Defense by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "mist": {
+    "type": "ice",
+    "power": null,
+    "move_type": "status",
+    "description": "Protects the user\u2019s stats from being changed by enemy moves."
+  },
+  "water-gun": {
+    "type": "water",
+    "power": 40,
+    "move_type": "special",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "hydro-pump": {
+    "type": "water",
+    "power": 110,
+    "move_type": "special",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "surf": {
+    "type": "water",
+    "power": 90,
+    "move_type": "special",
+    "description": "Inflicts regular damage and can hit Dive users."
+  },
+  "ice-beam": {
+    "type": "ice",
+    "power": 90,
+    "move_type": "special",
+    "description": "Has a 10% chance to freeze the target."
+  },
+  "blizzard": {
+    "type": "ice",
+    "power": 110,
+    "move_type": "special",
+    "description": "Has a 10% chance to freeze the target."
+  },
+  "confusion": {
+    "type": "psychic",
+    "power": 50,
+    "move_type": "special",
+    "description": "Has a 10% chance to confuse the target."
+  },
+  "withdraw": {
+    "type": "water",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Defense by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": 1,
+        "self": true
+      }
+    ]
+  },
+  "haze": {
+    "type": "ice",
+    "power": null,
+    "move_type": "status",
+    "description": "Resets all Pok\u00e9mon\u2019s stats, accuracy, and evasion."
+  },
+  "waterfall": {
+    "type": "water",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Has a 20% chance to make the target flinch."
+  },
+  "bubble": {
+    "type": "water",
+    "power": 40,
+    "move_type": "special",
+    "description": "Has a 10% chance to lower the target\u2019s Speed by one stage."
+  },
+  "flail": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Inflicts more damage when the user has less HP remaining, with a maximum of 200 power."
+  },
+  "foresight": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it\u2019s a Ghost."
+  },
+  "icy-wind": {
+    "type": "ice",
+    "power": 55,
+    "move_type": "special",
+    "description": "Has a 100% chance to lower the target\u2019s Speed by one stage."
+  },
+  "rollout": {
+    "type": "rock",
+    "power": 30,
+    "move_type": "physical",
+    "description": "Power doubles every turn this move is used in succession after the first, resetting after five turns."
+  },
+  "rapid-spin": {
+    "type": "normal",
+    "power": 50,
+    "move_type": "physical",
+    "description": "Frees the user from binding moves, removes Leech Seed, and blows away Spikes."
+  },
+  "rain-dance": {
+    "type": "water",
+    "power": null,
+    "move_type": "status",
+    "description": "Changes the weather to rain for five turns."
+  },
+  "mirror-coat": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "special",
+    "description": "Inflicts twice the damage the user received from the last special hit it took."
+  },
+  "whirlpool": {
+    "type": "water",
+    "power": 35,
+    "move_type": "special",
+    "description": "Prevents the target from leaving battle and inflicts 1/16 its max HP in damage for 2-5 turns."
+  },
+  "string-shot": {
+    "type": "bug",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Speed by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "speed",
+        "change": -2,
+        "self": false
+      }
+    ]
+  },
+  "harden": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Defense by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": 1,
+        "self": true
+      }
+    ]
+  },
+  "gust": {
+    "type": "flying",
+    "power": 40,
+    "move_type": "special",
+    "description": "Inflicts regular damage and can hit Pok\u00e9mon in the air."
+  },
+  "whirlwind": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Immediately ends wild battles.  Forces trainers to switch Pok\u00e9mon."
+  },
+  "supersonic": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Confuses the target.",
+    "effects": [
+      {
+        "name": "confusion",
+        "self": false
+      }
+    ]
+  },
+  "psybeam": {
+    "type": "psychic",
+    "power": 65,
+    "move_type": "special",
+    "description": "Has a 10% chance to confuse the target."
+  },
+  "stun-spore": {
+    "type": "grass",
+    "power": null,
+    "move_type": "status",
+    "description": "Paralyzes the target.",
+    "effects": [
+      {
+        "name": "paralyz",
+        "self": false
+      }
+    ]
+  },
+  "psychic": {
+    "type": "psychic",
+    "power": 90,
+    "move_type": "special",
+    "description": "Has a 10% chance to lower the target\u2019s Special Defense by one stage."
+  },
+  "nightmare": {
+    "type": "ghost",
+    "power": null,
+    "move_type": "status",
+    "description": "Target loses 1/4 its max HP every turn as long as it\u2019s asleep."
+  },
+  "poison-sting": {
+    "type": "poison",
+    "power": 15,
+    "move_type": "physical",
+    "description": "Has a 30% chance to poison the target."
+  },
+  "fury-attack": {
+    "type": "normal",
+    "power": 15,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "twineedle": {
+    "type": "bug",
+    "power": 25,
+    "move_type": "physical",
+    "description": "Hits twice in the same turn.  Has a 20% chance to poison the target."
+  },
+  "pin-missile": {
+    "type": "bug",
+    "power": 25,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "agility": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Speed by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "speed",
+        "change": 2,
+        "self": true
+      }
+    ]
+  },
+  "focus-energy": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Increases the user\u2019s chance to score a critical hit.",
+    "effects" : [
+      {
+        "name" : "stat-change",
+        "stat" : "critical-hit",
+        "change" : 1,
+        "self" : true
+      }
+    ]
+  },
+  "sludge-bomb": {
+    "type": "poison",
+    "power": 90,
+    "move_type": "special",
+    "description": "Has a 30% chance to poison the target."
+  },
+  "pursuit": {
+    "type": "dark",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Has double power against, and can hit, Pok\u00e9mon attempting to switch out."
+  },
+  "sand-attack": {
+    "type": "ground",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s accuracy by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "accuracy",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "quick-attack": {
+    "type": "normal",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "mirror-move": {
+    "type": "flying",
+    "power": null,
+    "move_type": "status",
+    "description": "Uses the target\u2019s last used move."
+  },
+  "thief": {
+    "type": "dark",
+    "power": 60,
+    "move_type": "physical",
+    "description": "Takes the target\u2019s item."
+  },
+  "feint-attack": {
+    "type": "dark",
+    "power": 60,
+    "move_type": "physical",
+    "description": "Never misses."
+  },
+  "detect": {
+    "type": "fighting",
+    "power": null,
+    "move_type": "status",
+    "description": "Prevents any moves from hitting the user this turn."
+  },
+  "counter": {
+    "type": "fighting",
+    "power": null,
+    "move_type": "physical",
+    "description": "Inflicts twice the damage the user received from the last physical hit it took."
+  },
+  "thunder": {
+    "type": "electric",
+    "power": 110,
+    "move_type": "special",
+    "description": "Has a 30% chance to paralyze the target."
+  },
+  "screech": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Defense by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": -2,
+        "self": false
+      }
+    ]
+  },
+  "fury-swipes": {
+    "type": "normal",
+    "power": 18,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "hyper-fang": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Has a 10% chance to make the target flinch."
+  },
+  "super-fang": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Inflicts damage equal to half the target\u2019s HP."
+  },
+  "flame-wheel": {
+    "type": "fire",
+    "power": 60,
+    "move_type": "physical",
+    "description": "Has a 10% chance to burn the target.  Lets frozen Pok\u00e9mon thaw themselves."
+  },
+  "reversal": {
+    "type": "fighting",
+    "power": null,
+    "move_type": "physical",
+    "description": "Inflicts more damage when the user has less HP remaining, with a maximum of 200 power."
+  },
+  "shadow-ball": {
+    "type": "ghost",
+    "power": 80,
+    "move_type": "special",
+    "description": "Has a 20% chance to lower the target\u2019s Special Defense by one stage."
+  },
+  "thunderbolt": {
+    "type": "electric",
+    "power": 90,
+    "move_type": "special",
+    "description": "Has a 10% chance to paralyze the target."
+  },
+  "leer": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Defense by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "peck": {
+    "type": "flying",
+    "power": 35,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "drill-peck": {
+    "type": "flying",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "tri-attack": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "special",
+    "description": "Has a 20% chance to burn, freeze, or paralyze the target."
+  },
+  "false-swipe": {
+    "type": "normal",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Cannot lower the target\u2019s HP below 1."
+  },
+  "slam": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "wrap": {
+    "type": "normal",
+    "power": 15,
+    "move_type": "physical",
+    "description": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
+  },
+  "acid": {
+    "type": "poison",
+    "power": 40,
+    "move_type": "special",
+    "description": "Has a 10% chance to lower the target\u2019s Special Defense by one stage."
+  },
+  "glare": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Paralyzes the target.",
+    "effects": [
+      {
+        "name": "paralyz",
+        "self": false
+      }
+    ]
+  },
+  "spite": {
+    "type": "ghost",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the PP of the target\u2019s last used move by 4."
+  },
+  "crunch": {
+    "type": "dark",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Has a 20% chance to lower the target\u2019s Defense by one stage."
+  },
+  "thunder-punch": {
+    "type": "electric",
+    "power": 75,
+    "move_type": "physical",
+    "description": "Has a 10% chance to paralyze the target."
+  },
+  "thunder-shock": {
+    "type": "electric",
+    "power": 40,
+    "move_type": "special",
+    "description": "Has a 10% chance to paralyze the target."
+  },
+  "thunder-wave": {
+    "type": "electric",
+    "power": null,
+    "move_type": "status",
+    "description": "Paralyzes the target.",
+    "effects": [
+      {
+        "name": "paralyz",
+        "self": false
+      }
+    ]
+  },
+  "zap-cannon": {
+    "type": "electric",
+    "power": 120,
+    "move_type": "special",
+    "description": "Has a 100% chance to paralyze the target."
+  },
+  "metal-claw": {
+    "type": "steel",
+    "power": 50,
+    "move_type": "physical",
+    "description": "Has a 10% chance to raise the user\u2019s Attack by one stage."
+  },
+  "double-kick": {
+    "type": "fighting",
+    "power": 30,
+    "move_type": "physical",
+    "description": "Hits twice in one turn."
+  },
+  "take-down": {
+    "type": "normal",
+    "power": 90,
+    "move_type": "physical",
+    "description": "User receives 1/4 the damage it inflicts in recoil."
+  },
+  "disable": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Disables the target\u2019s last used move for 1-8 turns."
+  },
+  "charm": {
+    "type": "fairy",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Attack by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "attack",
+        "change": -2,
+        "self": false
+      }
+    ]
+  },
+  "body-slam": {
+    "type": "normal",
+    "power": 85,
+    "move_type": "physical",
+    "description": "Has a 30% chance to paralyze the target."
+  },
+  "horn-attack": {
+    "type": "normal",
+    "power": 65,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "horn-drill": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Causes a one-hit KO."
+  },
+  "amnesia": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Special Defense by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "special-defense",
+        "change": 2,
+        "self": true
+      }
+    ]
+  },
+  "thrash": {
+    "type": "normal",
+    "power": 120,
+    "move_type": "physical",
+    "description": "Hits every turn for 2-3 turns, then confuses the user."
+  },
+  "pound": {
+    "type": "normal",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "double-slap": {
+    "type": "normal",
+    "power": 15,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "sing": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Puts the target to sleep.",
+    "effects": [
+      {
+        "name": "sleep",
+        "self": false
+      }
+    ]
+  },
+  "minimize": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s evasion by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "evasion",
+        "change": 2,
+        "self": true
+      }
+    ]
+  },
+  "metronome": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Randomly selects and uses any move in the game."
+  },
+  "dream-eater": {
+    "type": "psychic",
+    "power": 100,
+    "move_type": "special",
+    "description": "Only works on sleeping Pok\u00e9mon.  Drains half the damage inflicted to heal the user."
+  },
+  "encore": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Forces the target to repeat its last used move every turn for 2 to 6 turns."
+  },
+  "moonlight": {
+    "type": "fairy",
+    "power": null,
+    "move_type": "status",
+    "description": "Heals the user by half its max HP.  Affected by weather."
+  },
+  "psych-up": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Discards the user\u2019s stat changes and copies the target\u2019s."
+  },
+  "hypnosis": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Puts the target to sleep.",
+    "effects": [
+      {
+        "name": "sleep",
+        "self": false
+      }
+    ]
+  },
+  "confuse-ray": {
+    "type": "ghost",
+    "power": null,
+    "move_type": "status",
+    "description": "Confuses the target.",
+    "effects": [
+      {
+        "name": "confusion",
+        "self": false
+      }
+    ]
+  },
+  "double-edge": {
+    "type": "normal",
+    "power": 120,
+    "move_type": "physical",
+    "description": "User receives 1/3 the damage inflicted in recoil."
+  },
+  "leech-life": {
+    "type": "bug",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Drains half the damage inflicted to heal the user."
+  },
+  "mean-look": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Prevents the target from leaving battle."
+  },
+  "swords-dance": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Attack by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "attack",
+        "change": 2,
+        "self": true
+      }
+    ]
+  },
+  "absorb": {
+    "type": "grass",
+    "power": 20,
+    "move_type": "special",
+    "description": "Drains half the damage inflicted to heal the user."
+  },
+  "spore": {
+    "type": "grass",
+    "power": null,
+    "move_type": "status",
+    "description": "Puts the target to sleep.",
+    "effects": [
+      {
+        "name": "sleep",
+        "self": false
+      }
+    ]
+  },
+  "baton-pass": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Allows the trainer to switch out the user and pass effects along to its replacement."
+  },
+  "fissure": {
+    "type": "ground",
+    "power": null,
+    "move_type": "physical",
+    "description": "Causes a one-hit KO."
+  },
+  "magnitude": {
+    "type": "ground",
+    "power": null,
+    "move_type": "physical",
+    "description": "Power varies randomly from 10 to 150."
+  },
+  "pay-day": {
+    "type": "normal",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Scatters money on the ground worth five times the user\u2019s level."
+  },
+  "cross-chop": {
+    "type": "fighting",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Has an increased chance for a critical hit."
+  },
+  "future-sight": {
+    "type": "psychic",
+    "power": 120,
+    "move_type": "special",
+    "description": "Hits the target two turns later."
+  },
+  "karate-chop": {
+    "type": "fighting",
+    "power": 50,
+    "move_type": "physical",
+    "description": "Has an increased chance for a critical hit."
+  },
+  "low-kick": {
+    "type": "fighting",
+    "power": null,
+    "move_type": "physical",
+    "description": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+  },
+  "seismic-toss": {
+    "type": "fighting",
+    "power": null,
+    "move_type": "physical",
+    "description": "Inflicts damage equal to the user\u2019s level."
+  },
+  "meditate": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Attack by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "attack",
+        "change": 1,
+        "self": true
+      }
+    ]
+  },
+  "extreme-speed": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "bubble-beam": {
+    "type": "water",
+    "power": 65,
+    "move_type": "special",
+    "description": "Has a 10% chance to lower the target\u2019s Speed by one stage."
+  },
+  "splash": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Does nothing."
+  },
+  "mind-reader": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Ensures that the user\u2019s next move will hit the target."
+  },
+  "submission": {
+    "type": "fighting",
+    "power": 80,
+    "move_type": "physical",
+    "description": "User receives 1/4 the damage it inflicts in recoil."
+  },
+  "teleport": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Immediately ends wild battles.  No effect otherwise."
+  },
+  "barrier": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Defense by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": 2,
+        "self": true
+      }
+    ]
+  },
+  "recover": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Heals the user by half its max HP."
+  },
+  "reflect": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Reduces damage from physical attacks by half."
+  },
+  "kinesis": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s accuracy by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "accuracy",
+        "change": -1,
+        "self": false
+      }
+    ]
+  },
+  "rolling-kick": {
+    "type": "fighting",
+    "power": 60,
+    "move_type": "physical",
+    "description": "Has a 30% chance to make the target flinch."
+  },
+  "vital-throw": {
+    "type": "fighting",
+    "power": 70,
+    "move_type": "physical",
+    "description": "Never misses."
+  },
+  "aurora-beam": {
+    "type": "ice",
+    "power": 65,
+    "move_type": "special",
+    "description": "Has a 10% chance to lower the target\u2019s Attack by one stage."
+  },
+  "constrict": {
+    "type": "normal",
+    "power": 10,
+    "move_type": "physical",
+    "description": "Has a 10% chance to lower the target\u2019s Speed by one stage."
+  },
+  "mega-punch": {
+    "type": "normal",
+    "power": 80,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "rock-throw": {
+    "type": "rock",
+    "power": 50,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "self-destruct": {
+    "type": "normal",
+    "power": 200,
+    "move_type": "physical",
+    "description": "User faints."
+  },
+  "explosion": {
+    "type": "normal",
+    "power": 250,
+    "move_type": "physical",
+    "description": "User faints."
+  },
+  "stomp": {
+    "type": "normal",
+    "power": 65,
+    "move_type": "physical",
+    "description": "Has a 30% chance to make the target flinch."
+  },
+  "sonic-boom": {
+    "type": "normal",
+    "power": null,
+    "move_type": "special",
+    "description": "Inflicts 20 points of damage."
+  },
+  "lock-on": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Ensures that the user\u2019s next move will hit the target."
+  },
+  "lick": {
+    "type": "ghost",
+    "power": 30,
+    "move_type": "physical",
+    "description": "Has a 30% chance to paralyze the target."
+  },
+  "perish-song": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "User and target both faint after three turns."
+  },
+  "sludge": {
+    "type": "poison",
+    "power": 65,
+    "move_type": "special",
+    "description": "Has a 30% chance to poison the target."
+  },
+  "poison-gas": {
+    "type": "poison",
+    "power": null,
+    "move_type": "status",
+    "description": "Poisons the target.",
+    "effects": [
+      {
+        "name": "poison",
+        "self": false
+      }
+    ]
+  },
+  "acid-armor": {
+    "type": "poison",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Defense by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "defense",
+        "change": 2,
+        "self": true
+      }
+    ]
+  },
+  "clamp": {
+    "type": "water",
+    "power": 35,
+    "move_type": "physical",
+    "description": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
+  },
+  "spike-cannon": {
+    "type": "normal",
+    "power": 20,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "spikes": {
+    "type": "ground",
+    "power": null,
+    "move_type": "status",
+    "description": "Scatters Spikes, hurting opposing Pok\u00e9mon that switch in."
+  },
+  "night-shade": {
+    "type": "ghost",
+    "power": null,
+    "move_type": "special",
+    "description": "Inflicts damage equal to the user\u2019s level."
+  },
+  "psywave": {
+    "type": "psychic",
+    "power": null,
+    "move_type": "special",
+    "description": "Inflicts damage between 50% and 150% of the user\u2019s level."
+  },
+  "destiny-bond": {
+    "type": "ghost",
+    "power": null,
+    "move_type": "status",
+    "description": "If the user faints this turn, the target automatically will, too."
+  },
+  "bind": {
+    "type": "normal",
+    "power": 15,
+    "move_type": "physical",
+    "description": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
+  },
+  "vice-grip": {
+    "type": "normal",
+    "power": 55,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "guillotine": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Causes a one-hit KO."
+  },
+  "crabhammer": {
+    "type": "water",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Has an increased chance for a critical hit."
+  },
+  "mega-drain": {
+    "type": "grass",
+    "power": 40,
+    "move_type": "special",
+    "description": "Drains half the damage inflicted to heal the user."
+  },
+  "barrage": {
+    "type": "normal",
+    "power": 15,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "egg-bomb": {
+    "type": "normal",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "bone-club": {
+    "type": "ground",
+    "power": 65,
+    "move_type": "physical",
+    "description": "Has a 10% chance to make the target flinch."
+  },
+  "bonemerang": {
+    "type": "ground",
+    "power": 50,
+    "move_type": "physical",
+    "description": "Hits twice in one turn."
+  },
+  "bone-rush": {
+    "type": "ground",
+    "power": 25,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "mega-kick": {
+    "type": "normal",
+    "power": 120,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "jump-kick": {
+    "type": "fighting",
+    "power": 100,
+    "move_type": "physical",
+    "description": "If the user misses, it takes half the damage it would have inflicted in recoil."
+  },
+  "high-jump-kick": {
+    "type": "fighting",
+    "power": 130,
+    "move_type": "physical",
+    "description": "If the user misses, it takes half the damage it would have inflicted in recoil."
+  },
+  "comet-punch": {
+    "type": "normal",
+    "power": 18,
+    "move_type": "physical",
+    "description": "Hits 2-5 times in one turn."
+  },
+  "mach-punch": {
+    "type": "fighting",
+    "power": 40,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "smog": {
+    "type": "poison",
+    "power": 30,
+    "move_type": "special",
+    "description": "Has a 40% chance to poison the target."
+  },
+  "pain-split": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Sets the user\u2019s and targets\u2019s HP to the average of their current HP."
+  },
+  "soft-boiled": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Heals the user by half its max HP."
+  },
+  "heal-bell": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Cures the entire party of major status effects."
+  },
+  "present": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "Randomly inflicts damage with power from 40 to 120 or heals the target for 1/4 its max HP."
+  },
+  "dizzy-punch": {
+    "type": "normal",
+    "power": 70,
+    "move_type": "physical",
+    "description": "Has a 20% chance to confuse the target."
+  },
+  "octazooka": {
+    "type": "water",
+    "power": 65,
+    "move_type": "special",
+    "description": "Has a 50% chance to lower the target\u2019s accuracy by one stage."
+  },
+  "twister": {
+    "type": "dragon",
+    "power": 40,
+    "move_type": "special",
+    "description": "Has a 20% chance to make the target flinch."
+  },
+  "mimic": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Copies the target\u2019s last used move."
+  },
+  "substitute": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Transfers 1/4 of the user\u2019s max HP into a doll, protecting the user from further damage or status changes until it breaks."
+  },
+  "lovely-kiss": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Puts the target to sleep.",
+    "effects": [
+      {
+        "name": "sleep",
+        "self": false
+      }
+    ]
+  },
+  "powder-snow": {
+    "type": "ice",
+    "power": 40,
+    "move_type": "special",
+    "description": "Has a 10% chance to freeze the target."
+  },
+  "transform": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "User becomes a copy of the target until it leaves battle."
+  },
+  "sharpen": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Raises the user\u2019s Attack by one stage.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "attack",
+        "change": 1,
+        "self": true
+      }
+    ]
+  },
+  "conversion": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "User\u2019s type changes to the type of one of its moves at random."
+  },
+  "conversion-2": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Changes the user\u2019s type to a random type either resistant or immune to the last move used against it."
+  },
+  "sky-attack": {
+    "type": "flying",
+    "power": 140,
+    "move_type": "physical",
+    "description": "User charges for one turn before attacking.  Has a 30% chance to make the target flinch."
+  },
+  "bide": {
+    "type": "normal",
+    "power": null,
+    "move_type": "physical",
+    "description": "User waits for two turns, then hits back for twice the damage it took."
+  },
+  "spider-web": {
+    "type": "bug",
+    "power": null,
+    "move_type": "status",
+    "description": "Prevents the target from leaving battle."
+  },
+  "spark": {
+    "type": "electric",
+    "power": 65,
+    "move_type": "physical",
+    "description": "Has a 30% chance to paralyze the target."
+  },
+  "sweet-kiss": {
+    "type": "fairy",
+    "power": null,
+    "move_type": "status",
+    "description": "Confuses the target.",
+    "effects": [
+      {
+        "name": "confusion",
+        "self": false
+      }
+    ]
+  },
+  "cotton-spore": {
+    "type": "grass",
+    "power": null,
+    "move_type": "status",
+    "description": "Lowers the target\u2019s Speed by two stages.",
+    "effects": [
+      {
+        "name": "stat-change",
+        "stat": "speed",
+        "change": -2,
+        "self": false
+      }
+    ]
+  },
+  "morning-sun": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Heals the user by half its max HP.  Affected by weather."
+  },
+  "megahorn": {
+    "type": "bug",
+    "power": 120,
+    "move_type": "physical",
+    "description": "Inflicts regular damage with no additional effect."
+  },
+  "sketch": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Permanently becomes the target\u2019s last used move."
+  },
+  "triple-kick": {
+    "type": "fighting",
+    "power": 10,
+    "move_type": "physical",
+    "description": "Hits three times, increasing power by 100% with each successful hit."
+  },
+  "milk-drink": {
+    "type": "normal",
+    "power": null,
+    "move_type": "status",
+    "description": "Heals the user by half its max HP."
+  },
+  "aeroblast": {
+    "type": "flying",
+    "power": 100,
+    "move_type": "special",
+    "description": "Has an increased chance for a critical hit."
+  },
+  "sacred-fire": {
+    "type": "fire",
+    "power": 100,
+    "move_type": "physical",
+    "description": "Has a 50% chance to burn the target.  Lets frozen Pok\u00e9mon thaw themselves."
+  }
+}

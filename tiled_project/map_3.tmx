@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="10" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="3">
+ <editorsettings>
+  <export target="map_3.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="pokemon_crystal_tileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" class="tileLayer" width="10" height="8">
+  <data encoding="csv">
+417,417,417,417,417,417,417,417,417,500,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425,
+425,425,425,425,425,425,425,425,425,425
+</data>
+ </layer>
+ <objectgroup id="3" name="Object Layer 1" class="warpPoints">
+  <object id="1" name="warpPoint_1" type="warp" x="144" y="0" width="16" height="16">
+   <properties>
+    <property name="mapToWarpTo" value="map_2"/>
+    <property name="targetDir" type="int" value="2"/>
+    <property name="targetX" type="int" value="144"/>
+    <property name="targetY" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="2" name="startPoint" type="start" x="64" y="64" width="16" height="16"/>
+ </objectgroup>
+</map>

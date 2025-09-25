@@ -1,0 +1,95 @@
+{ "compressionlevel":-1,
+ "height":8,
+ "infinite":false,
+ "layers":[
+        {
+         "class":"tileLayer",
+         "data":[417, 417, 417, 417, 417, 417, 417, 417, 417, 500,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425,
+            425, 425, 425, 425, 425, 425, 425, 425, 425, 425],
+         "height":8,
+         "id":1,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "class":"warpPoints",
+         "draworder":"topdown",
+         "id":3,
+         "name":"Object Layer 1",
+         "objects":[
+                {
+                 "height":16,
+                 "id":1,
+                 "name":"warpPoint_1",
+                 "properties":[
+                        {
+                         "name":"mapToWarpTo",
+                         "type":"string",
+                         "value":"map_2"
+                        }, 
+                        {
+                         "name":"targetDir",
+                         "type":"int",
+                         "value":2
+                        }, 
+                        {
+                         "name":"targetX",
+                         "type":"int",
+                         "value":144
+                        }, 
+                        {
+                         "name":"targetY",
+                         "type":"int",
+                         "value":16
+                        }],
+                 "rotation":0,
+                 "type":"warp",
+                 "visible":true,
+                 "width":16,
+                 "x":144,
+                 "y":0
+                }, 
+                {
+                 "height":16,
+                 "id":2,
+                 "name":"startPoint",
+                 "rotation":0,
+                 "type":"start",
+                 "visible":true,
+                 "width":16,
+                 "x":64,
+                 "y":64
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":4,
+ "nextobjectid":3,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.11.2",
+ "tileheight":16,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"pokemon_crystal_tileset.tsx"
+        }],
+ "tilewidth":16,
+ "type":"map",
+ "version":"1.10",
+ "width":10
+}
