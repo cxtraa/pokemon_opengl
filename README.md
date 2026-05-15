@@ -7,8 +7,8 @@ This is a toy project that aims to recreate a game similar to Pokemon Crystal us
 
 ## Gameplay
 
-![Tile-based map and classic player](https://ibb.co/GvwbYL6x)
+![Tile-based map and classic player](https://i.ibb.co/rGP18Sj7/image.png)
 
-![NPC Dialogue](https://ibb.co/GQvbwH4V)
+![NPC Dialogue](https://i.ibb.co/0yjdNsRf/image.png)
 
-![A house](https://ibb.co/W4G8r3dc)
+![A house](https://i.ibb.co/tTQj0hNb/image.png)
