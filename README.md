@@ -1,8 +1,14 @@
 
 # Pokemon OpenGL
 
-## What does this project aim to do?
-Create a working recreation of a Pokemon game that can be extended.
+## Introduction
 
-## What is the current framework?
-Rendering is done in OpenGL by pushing to a buffer that is used to generate a single texture that goes over the display.
+This is a toy project that aims to recreate a game similar to Pokemon Crystal using C++ and pure OpenGL, with no game engine. The project is still in its infancy and as of now only really includes simple movement, moving between maps, and talking to NPCs. There are some known bugs like how you can still open the menu when inside the player pack. A lot of work still needs to be done before this is playable as a full game!
+
+## Gameplay
+
+![Tile-based map and classic player](https://ibb.co/GvwbYL6x)
+
+![NPC Dialogue](https://ibb.co/GQvbwH4V)
+
+![A house](https://ibb.co/W4G8r3dc)

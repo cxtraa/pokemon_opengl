@@ -6,7 +6,7 @@
             "startX" : 32,
             "startY" : 64,
             "characterName" : "fatGuyRed",
-            "dialogue" : "yaya is crazy hoolagon",
+            "dialogue" : "Welcome to the wonderful world of Pokemon!",
             "onInteractFuncName" : "npcDefault"
         },
         {
@@ -15,7 +15,7 @@
             "startX" : 128,
             "startY" : 256,
             "characterName" : "fatGuyRed",
-            "dialogue" : "cato is the best!!",
+            "dialogue" : "Which Pokemon will you choose on your adventure?",
             "onInteractFuncName" : "npcDefault"
         }
     ]
