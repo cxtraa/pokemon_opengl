@@ -1,7 +1,7 @@
 # Compiler and settings
 CXX := g++
 CXXFLAGS := -std=c++17 -Wall -Wextra -Iinclude -MMD -MP
-LDFLAGS := -lglfw -lglew -framework OpenGL
+LDFLAGS := -lglfw -lGLEW -lGL -ldl
 
 # Target name
 TARGET := main
